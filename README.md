@@ -1,9 +1,9 @@
-= path_expander
+# path_expander
 
-home :: https://github.com/seattlerb/path_expander
-rdoc :: http://docs.seattlerb.org/path_expander
+* home :: https://github.com/seattlerb/path_expander
+* rdoc :: http://docs.seattlerb.org/path_expander
 
-== DESCRIPTION:
+## DESCRIPTION:
 
 PathExpander helps pre-process command-line arguments expanding
 directories into their constituent files. It further helps by
@@ -18,7 +18,8 @@ of actually processing them in PathExpander. Use OptionParser to
 deal with options either before or after passing ARGV through
 PathExpander.
 
-== FEATURES/PROBLEMS:
+
+## FEATURES/PROBLEMS:
 
 * Processes command-line arguments.
 * Expands directories into files using custom globs.
@@ -26,8 +27,8 @@ PathExpander.
 * Allows for use of files as persisted args.
 * Provides a .ignore mechanism for lightweight persistent exclusion.
 
-== SYNOPSIS:
-
+## SYNOPSIS:
+```ruby
     class MyPathExpander < PathExpander
       MY_GLOB = "**/*.rb"
 
@@ -39,16 +40,16 @@ PathExpander.
     MyPathExpander.new(ARGV, my_glob).process.each do |f|
       # do something with each file
     end
-
-== REQUIREMENTS:
+```
+## REQUIREMENTS:
 
 * ruby
 
-== INSTALL:
+## INSTALL:
 
 * sudo gem install path_expander
 
-== LICENSE:
+## LICENSE:
 
 (The MIT License)
 
